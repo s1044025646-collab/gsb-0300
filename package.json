@@ -1,0 +1,19 @@
+{
+  "name": "contour-grid-backend",
+  "version": "1.0.0",
+  "description": "规则标量网格等值线提取与拼接后端",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
