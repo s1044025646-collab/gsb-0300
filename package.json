@@ -1,0 +1,18 @@
+{
+  "name": "contour-grid-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "规则标量网格等值线提取与拼接后端（Marching Squares，TypeScript + Node + SQLite）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/contour.test.js dist/test/service.test.js",
+    "start": "node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/demo/demo.js",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
